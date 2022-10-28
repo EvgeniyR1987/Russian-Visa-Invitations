@@ -69,6 +69,12 @@ wrapper {
   max-width: 100%;
   display: block;
 }
+@media (max-width: 479px) {
+    .header_logo img {
+        width: 50px;
+        height: 50px;
+    }
+}
 .header_logo img:hover {
   border: 2px solid #fff;
   border-radius: 50px;
@@ -134,10 +140,6 @@ wrapper {
 .page {
  flex: 1 1 auto;   
   }
-}
-.page_main-block {
-  
-}
 .main-block {
   position: relative;
 }
@@ -183,6 +185,7 @@ wrapper {
 @media (max-width: 479px) {
   .main-block_button {
   font-size: 12px;
+  padding: 5px 18px;
   }
 }
 .main-block_button:hover {
@@ -201,6 +204,4 @@ wrapper {
   top: 0;
   left: 0;
 }
-.footer {
-  
-}
+
