@@ -146,7 +146,7 @@ wrapper {
   position: relative;
   z-index: 2;
   max-width: 500px;
-  height: 500px;
+  height: 700px;
 }
 .main-block_body > *:not(:last-child) {
   margin: 0px 0px 35px 0px;
