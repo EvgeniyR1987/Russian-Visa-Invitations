@@ -128,7 +128,7 @@ wrapper {
 }
 @media (max-width: 479px) {
   .menu_link {
-  font-size: 18px;
+  font-size: 12px;
   }
 }
 .page {
