@@ -180,6 +180,11 @@ wrapper {
   font-weight: 700;
   text-align: center;
 }
+@media (max-width: 479px) {
+  .main-block_button {
+  font-size: 18px;
+  }
+}
 .main-block_button:hover {
   background: #fff;
 }
@@ -195,6 +200,7 @@ wrapper {
   height: 100%;
   top: 0;
   left: 0;
+  background-attachment: fixed;
 }
 .footer {
   
