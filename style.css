@@ -144,11 +144,11 @@ wrapper {
   position: relative;
 }
 .main-block_body {
-  padding: 460px 460px 460px 460px;
+  padding: 350px 350px 350px 350px;
   position: relative;
   z-index: 2;
-  max-width: 1440px;
-  height: 1440px;
+  max-width: 1080px;
+ 
 }
 .main-block_body > *:not(:last-child) {
   margin: 0px 0px 35px 0px;
@@ -205,4 +205,3 @@ wrapper {
   top: 0;
   left: 0;
 }
-
