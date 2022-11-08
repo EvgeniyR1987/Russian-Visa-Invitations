@@ -30,6 +30,7 @@ html,
 body {
   height: 100%;
   line-height: 1;
+  background: #fafafa;
   font-size: 14px;
   color: #252b42;
   font-weight: 500;
@@ -68,16 +69,6 @@ wrapper {
   height: 100px;
   max-width: 100%;
   display: block;
-}
-@media (max-width: 479px) {
-    .header_logo img {
-        width: 50px;
-        height: 50px;
-    }
-}
-.header_logo img:hover {
-  border: 2px solid #fff;
-  border-radius: 50px;
 }
 .header {
   position: absolute;
@@ -139,7 +130,41 @@ wrapper {
 }
 .page {
  flex: 1 1 auto;   
+}
+.page_main-block {
+  
+}
+.page_services {
+  position: relative;
+  z-index: 2;
+  margin: -111px 0px 0px 0px;
+}
+.page_advantages {
+
+}
+.page_practice {
+  
+}
+.header-block {
+text-align: center;
+letter-spacing: 0.2px;
+}
+.header-block_title {
+font-size: 40px;
+line-height: 142%;
+font-weight: 700;
+}
+.header-block_title:not(:last-child) {
+    margin: 0px 0px 10px 0px;
+}
+.header-block_sub-title {
+    line-height: 142%;
+}
+@media (max-width: 992px) {
+  .header-block_title {
+    font-size: 30px;
   }
+}
 .main-block {
   position: relative;
 }
@@ -147,36 +172,42 @@ wrapper {
   padding: 184px 0px 191px 0px;
   position: relative;
   z-index: 2;
-  max-width: 600px;
+  max-width: 500px;
 }
-@media (min-width: 768px) {
-    .main-block_body {
-      height: 1180px;
-      max-width: 1080px;
+@media (max-width: 992px) {
+  .main-block_body {
+    padding: 120px 0px 191px 0px;
+    }
+}
+@media (max-width: 479px) {
+  .main-block_body {
+    padding: 115px 0px 160px 0px;
     }
 }
 .main-block_body > *:not(:last-child) {
   margin: 0px 0px 35px 0px;
 }
 .main-block_title {
-  color: #fff;
+  color: white;
   font-size: 58px;
   line-height: calc(80 / 58 * 100%);
   letter-spacing: 0.2px;
   font-weight: 800;
 }
 .main-block_text {
-  color: #fff;
+  color: black;
   font-size: 20px;
   line-height: calc(30 / 20 * 100%);
 }
 .main-block_buttons {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px 0px;
 }
 .main-block_button {
   background: hsla(0, 0%, 100%, .5);
-  border: 1px solid #fff;
-  color: #961d1d;
+  border: 1px solid black;
+  color: black;
   border-radius: 37px;
   display: flex;
   min-height: 48px;
@@ -187,26 +218,21 @@ wrapper {
   line-height: 150%;
   font-weight: 700;
   text-align: center;
+  margin: 10px 0px;
 }
 @media (max-width: 479px) {
-  .main-block_buttons {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 18px;
-  justify-content: center;
-  padding: 0px 36px;
+  .main-block_button {
+  flex: 1 1 100%;
   }
 }
 .main-block_button:hover {
-  background: #fff;
+  background: black;
+  color: white;
 }
+@media (min-width: 479px) {
 .main-block_button:not(:last-child) {
-  margin: 0px 10px 0px 0px;
-}
-@media (max-width: 479px) {
-    .main-block_button:not(:last-child) {
-        margin: 0px 10px 10px 0px;
-        }
+  margin-right: 10px;
+  }
 }
 .main-block_button img {
  border-radius: 37px;
@@ -217,4 +243,197 @@ wrapper {
   height: 100%;
   top: 0;
   left: 0;
+  opacity: 0.5;
+}
+.services_body {
+  
+}
+@media (min-width: 670px) {
+  .services_body {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -15px;
+  }
+}
+.services_column {
+  flex: 0 1 33.333%;
+}
+@media (min-width: 670px) {
+  .services_column{
+    padding: 0px 15px;
+  }
+}
+@media (max-width: 992px) {
+  .services_column {
+    flex: 0 1 50%;
+  }
+  .services_column:not(:last-child) {
+    margin: 0px 0px 30px 0px;
+  }
+  .services_column:last-child {
+    flex: 1 1 100%;
+  }
+}
+.services_item {
+  height: 100%;
+  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+  background-color: #fff;
+  padding: 35px;
+}
+.item-service >*:not(:last-child){
+  margin: 0px 0px 10px 0px;
+}
+.item-service_icon {
+  
+}
+.item-service_title {
+  font-weight: 700;
+  letter-spacing: 0.1px;
+  font-size: 24px;
+  line-height: 133%;
+}
+.item-service_text {
+  line-height: 133%;
+}
+.advantages {
+    padding: 80px 0;
+}
+@media (max-width: 992px) {
+  .advantages {
+    padding: 50px 0;
+}
+}
+@media (max-width: 767px) {
+  .advantages {
+    padding: 40px 0;
+}
+}
+.advantages_header {
+    margin: 0px 0px 50px 0px;
+}
+@media (max-width: 767px) {
+  .advantages_header {
+    margin: 0px 0px 25px 0px;
+}
+}
+.advantages_body {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -15px -30px;
+}
+.advantages_column {
+    padding: 0px 15px;
+    margin: 0px 0px 30px 0px;
+    flex: 0 1 25%;
+}
+@media (max-width: 1020px) {
+  .advantages_column {
+    flex: 0 1 50%;
+  }
+}
+@media (max-width: 560px) {
+  .advantages_column {
+    flex: 0 1 100%;
+  }
+}
+.advantages_item {
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+.advantages_item > *:not(:last-child) {
+    margin: 0px 0px 10px 0px;
+}
+.advantages_value {
+    font-size: 40px;
+    line-height: 142%;
+}
+.advantages_text {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.1px;
+}
+.advantages_icon {
+    display: flex;
+    height: 75px;
+    align-items: flex-end;
+    justify-content: center;
+}
+.practice {
+   padding: 20px 0px 80px 0px;
+}
+@media (max-width: 992px) {
+  .practice {
+  padding: 10px 0px 80px 0px;
+  }
+}
+@media (max-width: 767px) {
+  .practice {
+  padding: 0px 0px 40px 0px;
+  }
+}
+.practice_header {
+   margin: 0px 0px 45px 0px;
+}
+@media (max-width: 767px) {
+  .practice_header {
+  margin: 0px 0px 25px 0px;
+  }
+}
+.practice_body {
+  margin: 0px -20px -30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.practice_column {
+  padding: 0px 20px;
+  margin: 0px 0px 30px 0px;
+  flex: 0 1 25%;
+}
+@media (max-width: 1040px) {
+  .practice_column {
+  flex: 0 1 50%;
+  }
+}
+@media (max-width: 630px) {
+  .practice_column {
+  flex: 0 1 100%;
+  }
+}
+.item-practice {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.item-practice_content {
+ padding: 30px;
+  flex: 1 1 auto;
+}
+.item-practice_link {
+  color: inherit;
+  display: inline-block;
+}
+.item-practice_link:hover {
+  text-decoration: underline;
+}
+.item-practice_link:not(:last-child) {
+  margin: 0px 0px 15px 0px;
+}
+.item-practice_title {
+ letter-spacing: 0.1px;
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 700;
+}
+.item-practice_text {
+  line-height: 142%;
+}
+.item-practice_image {
+  display: block;
+  padding: 0px 0px 60% 0px;
+}
+.footer {
+  
 }
