@@ -132,7 +132,6 @@ wrapper {
  flex: 1 1 auto;   
 }
 .page_main-block {
-  
 }
 .page_services {
   position: relative;
@@ -140,16 +139,19 @@ wrapper {
   margin: -111px 0px 0px 0px;
 }
 .page_advantages {
-
 }
 .page_practice {
-  
 }
 .page_whoweare {
-  
 }
-.page_clients {
-  
+.page_clients:not(:last-child) {
+  margin: 0px 0px 10px 0px;
+}
+.page_subscribe {
+}
+.page_getintouch {
+}
+.page_contact{
 }
 .header-block {
 text-align: center;
@@ -225,6 +227,7 @@ font-weight: 700;
   font-weight: 700;
   text-align: center;
   margin: 10px 0px;
+  transition: all 0.3s ease 0s;
 }
 @media (max-width: 479px) {
   .main-block_button {
@@ -232,7 +235,8 @@ font-weight: 700;
   }
 }
 .main-block_button:hover {
-  background: black;
+  background: #ff7b47;
+  border: 1px solid white;
   color: white;
 }
 @media (min-width: 479px) {
@@ -559,6 +563,11 @@ font-weight: 700;
 .clients {
   padding: 50px 0px;
 }
+@media (max-width: 767px) {
+  .clients {
+    padding: 30px 0px;
+  }
+}
 .clients_items {
   display: flex;
   align-items: center;
@@ -574,6 +583,362 @@ font-weight: 700;
 .clients_item img {
   max-width: 100%;
 }
-.footer {
+.subscribe {
+  position: relative;
+  padding: 0px 0px 20px 0px;
+}
+.subscribe::before {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 77px;
+  left: 0;
+  content: "";
+  background: #252842;
+}
+.subscribe_body {
+  position: relative;
+  z-index: 2;
+  padding: 30px 50px;
+  align-items: center;
+  background-color: #17213c;
+  border-radius: 2px;
+}
+@media (min-width: 1070px) {
+  .subscribe_body {
+    margin: 0px 30px;
+  }
+}
+@media (min-width: 810px) {
+  .subscribe_body {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 810px) {
+  .subscribe_body {
+    margin: 0px -15px;
+    padding: 20px 25px;
+  }
+}
+.subscribe_title {
+  flex: 0 1 50%; 
+  font-size: 24px;
+  color: #fff;
+  line-height: 133%;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+}
+@media (max-width: 810px) {
+  .subscribe_title {
+    margin: 0px 0px 20px 0px;
+  }
+}
+@media (min-width: 810px) {
+  .subscribe_title {
+    max-width: 266px;
+  }
+}
+.subscribe_form {
+  flex: 0 1 50%; 
+  display: flex;
+  align-items: center;
+}
+.subscribe_input {
+  width: 100%;
+  flex: 1 1 auto;
+  min-height: 58px;
+  background: #f9f9f9;
+  color: #737373;
+  padding: 0px 20px;
+  border: 1px solid #e6e6e6;
+  border-right: 0;
+  box-sizing: border-box;
+  border-radius: 5px 0px 0px 5px;
+}
+.subscribe_input:focus {
+  color: #000;
+}
+@media (max-width: 810px) {
+  .subscribe_input {
+    padding: 0px 15px;
+  }
+}
+.subscribe_button {
+  background: #ff7b47;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  border-radius: 0px 5px 5px 0px;
+  display: flex;
+  min-height: 58px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 0px 22px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+.subscribe_button:hover {
+  background: #ca6137;
+}
+@media (max-width: 810px) {
+  .subscribe_button {
+    padding: 0px 15px;
+  }
+}
+.getintouch {
+  padding: 80px 0px 135px 0px;
+}
+@media (max-width: 992px) {
+  .getintouch {
+  margin: 50px 0px 50px 0px;
+}
+}
+.getintouch_header {
+  margin: 0px 0px 80px 0px;
+}
+@media (max-width: 992px) {
+  .getintouch_header {
+  margin: 0px 0px 50px 0px;
+}
+}
+@media (max-width: 767px) {
+  .getintouch_header {
+  margin: 0px 0px 30px 0px;
+}
+}
+.getintouch_items {
+  margin: 0px -15px;
+}
+@media (min-width: 992px) {
+  .getintouch_items {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+}
+.getintouch_item {
+  flex: 0 1 33.33%;
+}
+.item-getintouch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 50px 15px;
+}
+.item-getintouch > *:not(:last-child){
+  margin: 0px 0px 15px 0px;
+}
+.item-getintouch_active {
+  background: #252b42;
+  padding: 80px 15px;
+  color: #fff; 
+}
+@media (max-width: 992px) {
+  .item-getintouch_active {
+  padding: 50px 15px;
+}
+}
+.item-getintouch_active .item-getintouch_button {
+ border: 1px solid #fff;
+  color: #fff;
+}
+.item-getintouch_emails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.item-getintouch_email {
+  color: inherit;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+}
+.item-getintouch_email:hover {
+  text-decoration: underline;
+}
+.item-getintouch_label {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+}
+.item-getintouch_button {
+  border: 1px solid #ff7b47;
+  min-height: 44px;
+  display: flex;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+  color: #ff7b47;
+  line-height: 142%;
+  border-radius: 5px;
+  padding: 5px 20px;
+}
+.item-getintouch_button:hover {
+  background-color: #ff7b47;
+  color: #fff;
+}
+.contact {
+  background-color: #fff;
+  padding: 42px 0px;
+}
+.contact_body {
   
+}
+@media (min-width: 767px) {
+  .contact_body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  }
+}
+.contact_content {
+  padding: 0px 0px 20px 0px;
+}
+@media (min-width: 767px) {
+  .contact_content {
+     padding: 0px 20px 0px 0px;
+  }
+}
+.contact_title {
+  font-weight: 700;
+  letter-spacing: 0.1px;
+  font-size: 24px;
+  line-height: 133%;
+}
+.contact_title:not(:last-child) {
+  margin: 0px 0px 10px 0px;
+}
+.contact_text {
+  color: #737373;
+  line-height: 142%;
+}
+.contact_button {
+  display: flex;
+  background-color: #ff7b47;
+  border-radius: 5px;
+  min-height: 58px;
+  padding: 5px 40px;
+  transition: background-color 0.3s ease 0s;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+.contact_button:hover {
+  background: #aa5330;
+}
+.footer {
+}
+.footer_top {
+  background: #17213c;
+  padding: 35px 0px;
+}
+.footer_main {
+  
+}
+.footer_row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -15px;
+}
+.footer_column {
+  padding: 15px 15px;
+  flex: 0 1 16%;
+}
+@media (max-width: 992px) {
+  .footer_column {
+    flex: 0 1 25%;
+  }
+  .footer_column:last-child {
+  flex: 1 1 100%;
+}
+}
+@media (max-width: 700px) {
+  .footer_column {
+    flex: 0 1 50%;
+  }
+}
+.footer_column:last-child {
+  flex: 0 1 33%;
+}
+.footer_label {
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  margin: 0px 0px 20px 0px;
+}
+.menu-footer_item:not(:last-child) {
+  margin: 0px 0px 10px 0px;
+}
+.menu-footer_link {
+  color: #fff;
+  display: inline-block;
+  line-height: 171%;
+  letter-spacing: 0.2px;
+}
+.menu-footer_link:hover {
+  text-decoration: underline;
+}
+.contacts-footer {
+  display: flex;
+  flex-direction: column;
+}
+.contacts-footer_item {
+  padding: 0px 0px 0px 40px;
+  line-height: 142%;
+  display: flex;
+  align-items: center;
+  min-height: 32px;
+  color: #fff;
+}
+.contacts-footer_item:hover {
+  text-decoration: underline;
+}
+.contacts-footer_item:not(:last-child) {
+  margin: 0px 0px 12px 0px;
+}
+.contacts-footer_item_phone {
+  background: url("https://github.com/EvgeniyR1987/Russian-Visa-Invitations/blob/main/phoneicon.png?raw=true") left no-repeat;
+}
+.contacts-footer_item_map {
+  background: url("https://github.com/EvgeniyR1987/Russian-Visa-Invitations/blob/main/mapicon.png?raw=true") left no-repeat;
+}
+.contacts-footer_item_email {
+  background: url("https://github.com/EvgeniyR1987/Russian-Visa-Invitations/blob/main/emailicon.png?raw=true") left no-repeat;
+}
+.footer_bottom {
+  padding: 25px 0px;
+}
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .footer_container {
+    flex-direction: column;
+}
+  .footer_copy {
+  margin: 0px 0px 15px 0px;
+    text-align: center;
+} 
+}
+.footer_copy {
+  color: #737373;
+  line-height: 171%;
+} 
+.social {
+  display: flex;
+  align-items: center;
+}
+.social_item:not(:last-child) {
+  margin: 0px 20px 0px 0px;
 }
