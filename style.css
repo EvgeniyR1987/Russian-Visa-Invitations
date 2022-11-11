@@ -70,6 +70,12 @@ wrapper {
   max-width: 100%;
   display: block;
 }
+@media (max-width: 767px) {
+  .header_logo img {
+    width: 70px;
+    height: 70px;
+  }
+}
 .header {
   position: absolute;
   width: 100%;
