@@ -43,10 +43,11 @@ wrapper {
   flex-direction: column;
 }
 .container {
+  overflow: hidden;
   max-width: 1440px;
   padding: 0px 15px;
   margin: 0px auto;
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 .ibg {
   position: relative;
