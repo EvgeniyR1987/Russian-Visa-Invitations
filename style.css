@@ -36,14 +36,13 @@ body {
   font-weight: 500;
   font-family: Montserrat;
 }
-wrapper {
+.wrapper {
   min-height: 100%;
   overflow: hidden;
   display: flex;
   flex-direction: column;
 }
 .container {
-  overflow: hidden;
   max-width: 1440px;
   padding: 0px 15px;
   margin: 0px auto;
