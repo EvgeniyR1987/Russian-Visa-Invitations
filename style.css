@@ -98,12 +98,12 @@ body {
 }
 @media (max-width: 992px) {
   .header_menu {
-  margin: 0px 0px 0px 80px;
+  margin: 0px 0px 0px 40px;
   }
 }
 @media (max-width: 767px) {
   .header_menu {
-  margin: 0px 0px 0px 40px;
+  margin: 0px 0px 0px 30px;
   }
 }
 @media (max-width: 479px) {
@@ -561,9 +561,9 @@ font-weight: 700;
 }
 .item-whoweare_text {
   line-height: 142%;
-  white-space: nowrap;
+  /*white-space: nowrap;
   width: 225px;
-  /*overflow: hidden;
+  overflow: hidden;
   text-overflow: ellipsis;*/
 }
 .clients {
