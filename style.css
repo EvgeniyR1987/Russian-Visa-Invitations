@@ -122,12 +122,12 @@ body {
   margin: 0px 21px 0px 0px;
 }
 .menu_link {
-  color: #961d1d;
+  color: #fff;
   line-height: calc(24 / 14 * 100%);
   font-weight: 600;
 }
 .menu_link:hover {
-  color: #fff;
+  text-decoration: underline;
 }
 @media (max-width: 479px) {
   .menu_link {
@@ -177,6 +177,11 @@ font-weight: 700;
 @media (max-width: 992px) {
   .header-block_title {
     font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .header-block_title {
+    font-size: 20px;
   }
 }
 .main-block {
@@ -242,7 +247,7 @@ font-weight: 700;
 }
 .main-block_button:hover {
   background: #ff7b47;
-  border: 1px solid white;
+  border: 1px solid #ff7b47;
   color: white;
 }
 @media (min-width: 479px) {
