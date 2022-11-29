@@ -455,6 +455,10 @@ font-weight: 700;
   display: block;
   padding: 0px 0px 60% 0px;
 }
+.item-practice_image:hover {
+  filter: brightness(0.7);
+  transition: 0.7s;
+}
 .whoweare {
   background: #fff;
   padding: 20px 0px 130px 0px;
