@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
   form.addEventListener("submit", formSend);
   async function formSend(e) {
     e.preventDefault();
+    let error = formValidate(form);
+    let formData = new FormData(form);
     if (error===0) {
     let response = await fetch("sendmail.php", {
       method: "POST",
