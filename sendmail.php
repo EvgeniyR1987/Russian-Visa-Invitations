@@ -9,7 +9,7 @@
   $mail->IsHTML(true);
   $mail->setFrom('comandatt@yandex.ru', 'Евгений');
   $mail->addAddress('comandatt@yandex.ru');
-  $mail->Subject = 'Подписка';
+  $mail->Subject = 'Подписка RVI';
   $body = '<h1>Встречайте письмо!</h1>';
   if(trim(!empty($_POST['email']))) {
     $body.='<p><strong>E-mail:</strong> '.$_POST['email'].'</p>';
