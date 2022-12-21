@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     e.preventDefault();
     let response = await fetch("sendmail.php", {
       method: "POST",
-      body: formData
+      body: formEmail
   });
       if (response.ok) {
         let result = await response.json();
