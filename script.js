@@ -34,7 +34,12 @@ document.addEventListener("DOMContentLoaded", function () {
           formAddError(input);
           error++;
         }
-      } 
+      } else {
+        if (input.value === "") {
+          formAddError(input);
+          error++;
+        }
+      }
     }
     return error;
   }
