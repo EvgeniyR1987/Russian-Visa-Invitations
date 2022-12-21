@@ -5,7 +5,7 @@
   require 'phpmailer/PHPMailer.php';
   $mail = new PHPMailer(true);
   $mail->CharSet = 'UTF-8';
-  $mail->setLanguage('en', 'phpmailer/language/');
+  $mail->setLanguage('ru', 'phpmailer/language/');
   $mail->IsHTML(true);
   $mail->setFrom('comandatt@yandex.ru', 'Евгений');
   $mail->addAddress('comandatt@yandex.ru');
@@ -13,6 +13,7 @@
   $body = '<h1>Встречайте письмо!</h1>';
   if(trim(!empty($_POST['email']))) {
     $body.='<p><strong>E-mail:</strong> '.$_POST['email'].'</p>';
+  }
   $mail->Body = $body;
   if (!$mail->send()) {
     $message = 'Ошибка';
